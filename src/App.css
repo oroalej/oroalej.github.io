@@ -1,38 +1,190 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+
+.animate-slide-up-bounce {
+  animation-fill-mode: forwards;
+  animation-name: slideUpBounce;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1000ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animate-fade-pop-in {
+  animation-fill-mode: forwards;
+  animation-name: fadePopIn;
+  animation-timing-function: ease-out;
+  animation-duration: 500ms;
+  transform-origin: center;
+}
+
+.animate-fade-out {
+  animation-fill-mode: forwards;
+  animation-name: fadeOut;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  transform-origin: center;
+}
+
+.animate-fade-in {
+  animation-fill-mode: forwards;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  transform-origin: center;
+}
+
+.animate-text-hide {
+  animation-fill-mode: forwards;
+  animation-name: textHide;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  animation-delay: 4000ms;
+  transform-origin: center;
+}
+
+@keyframes textHide {
+  0% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(100%)
+  }
+}
+
+
+@keyframes slideUpBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(20px)
+  }
+  60% {
+    transform: translateY(-5px);
+    opacity: 1
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+@keyframes slide-up-search {
+  0% {
+    opacity: 0;
+    transform: translateY(2em)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+
+
+@keyframes textroll {
+  0% {
+    transform: translateY(100%) scale(.943396226);
+    opacity: 0
+  }
+  16.666666667%, 3% {
+    transform: translateY(calc(100% - 1px)) scale(.943396226);
+    transform-origin: center top;
+    opacity: .55
+  }
+  19.666666667%, 33.333333333% {
+    transform: translateY(0) scale(1);
+    transform-origin: center center;
+    opacity: 1
+  }
+  36.333333333%, 50% {
+    transform: translateY(calc(-100% + 1px)) scale(.943396226);
+    transform-origin: center bottom;
+    opacity: .55
+  }
+  53% {
+    transform: translateY(-100%) scale(.943396226);
+    opacity: 0
+  }
+  100% {
+    transform: translateY(-100%) scale(.943396226);
+    opacity: 0
+  }
+}
+
+@keyframes fadePopIn {
+  0% {
+    opacity: 0;
+    transform: scale(.9)
+  }
+  70% {
+    transform: scale(1.05)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+.animation-delay-900 {
+  animation-delay: 900ms;
+}
+
+.animation-delay-1200 {
+  animation-delay: 1200ms;
+}
+
+.animation-delay-1500 {
+  animation-delay: 1500ms;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .animate-slide-up-bounce, .animate-fade-in {
+    opacity: 0
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@tailwind utilities;

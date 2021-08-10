@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Frontend",
+    "list": [
+      {
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png",
+        "text": "HTML",
+        "highlighted": true
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/sass-avatar.png",
+        "text": "CSS / SASS",
+        "highlighted": true
+      },
+      {
+        "icon": "https://avatars.githubusercontent.com/u/67109815?s=280&v=4",
+        "text": "TailwindCSS",
+        "highlighted": true
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png",
+        "text": "Bootstrap",
+        "highlighted": true
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png",
+        "text": "Javascript",
+        "highlighted": true
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png",
+        "text": "ECMAScript",
+        "highlighted": true
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/typescript.png",
+        "text": "Typescript"
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/vue-js.png",
+        "text": "VueJS / Vuex / VueRouter",
+        "highlighted": true
+      },
+      {
+        "icon": "https://d33wubrfki0l68.cloudfront.net/6ff34ec8760318b99888ee4b75d1e265170a84b9/6479c/logos/nuxt.svg",
+        "text": "NuxtJS"
+      },
+      {
+        "icon": "https://avatars.githubusercontent.com/u/47703742?s=200&v=4",
+        "text": "Inertia",
+        "className": "w-4.5 h-4.5 ml-0.5 mr-1"
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/react-native.png",
+        "text": "ReactJS / ReactRouter"
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/angularjs.png",
+        "text": "AngularJS"
+      }
+    ]
+  },
+  {
+    "title": "Backend",
+    "list": [
+      {
+        "icon": "https://img.icons8.com/fluency/48/000000/laravel.png",
+        "text": "Laravel",
+        "highlighted": true
+      },
+      {
+        "icon": "https://img.icons8.com/offices/30/000000/php-logo.png",
+        "text": "PHP",
+        "className": "w-6 h-6 ml-0.5 mr-1"
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/golang.png",
+        "text": "GOLang"
+      }
+    ]
+  },
+  {
+    "title": "Database",
+    "list": [
+      {
+        "icon": "https://img.icons8.com/color/30/000000/mysql-logo.png",
+        "text": "MySQL"
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/graphql.png",
+        "text": "GraphQL"
+      },
+      {
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png",
+        "text": "Firebase"
+      }
+    ]
+  }
+]
