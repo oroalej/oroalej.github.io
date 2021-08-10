@@ -82,10 +82,8 @@ const Home = () => {
 
       <SectionWrapper>
         <h2 tw="inline-flex">
-          <span
-            tw="font-medium text-3xl text-gray-600 font-sans text-left dark:text-gray-200 transition-colors duration-200">Skills</span>
-          <LinkIcon
-            tw="w-4 h-4 ml-1.5 mt-1 text-gray-700 hover:text-blue-600 dark:hover:text-red-500 dark:text-gray-200 cursor-pointer transition-colors"/>
+          <span tw="font-medium text-3xl text-gray-600 font-sans text-left dark:text-gray-200 transition-colors duration-200">Skills</span>
+          <LinkIcon tw="w-4 h-4 ml-1.5 mt-1 text-gray-700 hover:text-blue-600 dark:hover:text-red-500 dark:text-gray-200 cursor-pointer transition-colors"/>
         </h2>
 
         <div tw="mb-7 w-full text-gray-700 dark:text-gray-200 transition-colors duration-200">
@@ -97,7 +95,7 @@ const Home = () => {
                 <div tw="grid sm:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-4">
                   {list.map(({icon, text, highlighted, className}, index) => (
                     <div tw="inline-flex flex-row gap-1" key={text + index}>
-                      <img src={icon} alt={text} css={[!className && tw`w-6 h-6`]} className={className}/>
+                      <img src={icon} alt={text} css={[className === 'string' ? className : tw`w-6 h-6`]}/>
                       <span css={[tw`select-all`, highlighted && tw`font-medium`]}>{text}</span>
                     </div>
                   ))}
@@ -109,8 +107,8 @@ const Home = () => {
       </SectionWrapper>
 
       <div
-        className="fixed bottom-5 right-5 rounded-full w-12 h-12 bg-red-400 text-white inline-flex justify-center items-center cursor-pointer hover:bg-red-500 transition-colors">
-        <ChevronUpIcon className="w-8 h-8"/>
+        tw="fixed bottom-5 right-5 rounded-full w-12 h-12 bg-red-400 text-white inline-flex justify-center items-center cursor-pointer hover:bg-red-500 transition-colors">
+        <ChevronUpIcon tw="w-8 h-8"/>
       </div>
 
       <ContactMe/>

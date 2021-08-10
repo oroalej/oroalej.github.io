@@ -48,7 +48,7 @@
       {
         "icon": "https://avatars.githubusercontent.com/u/47703742?s=200&v=4",
         "text": "Inertia",
-        "className": "w-4.5 h-4.5 ml-0.5 mr-1"
+        "className": "tw`w-4.5 h-4.5 ml-0.5 mr-1`"
       },
       {
         "icon": "https://img.icons8.com/color/48/000000/react-native.png",
@@ -71,7 +71,7 @@
       {
         "icon": "https://img.icons8.com/offices/30/000000/php-logo.png",
         "text": "PHP",
-        "className": "w-6 h-6 ml-0.5 mr-1"
+        "className": "tw`w-6 h-6 ml-0.5 mr-1`"
       },
       {
         "icon": "https://img.icons8.com/color/48/000000/golang.png",
