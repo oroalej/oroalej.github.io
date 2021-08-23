@@ -4,7 +4,7 @@ import tw from "twin.macro"
 
 const TheHeader = () => {
   return (
-    <div css={tw`flex justify-between items-center flex-row py-2`}>
+    <div css={tw`flex justify-between items-center flex-row py-2 z-50`}>
       <div tw="inline-flex flex-wrap flex-row gap-6">
         <NavItem exact to="/">
           Home

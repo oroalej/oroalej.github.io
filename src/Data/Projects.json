@@ -1,21 +1,15 @@
 [
   {
-    "name": "Expense Tracker",
-    "link": "",
-    "image": "https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-    "technologies": [
-      "ReactJS",
-      "ReactRouter",
-      "TailwindCSS",
-      "HeroIcons",
-      "GraphQL"
-    ]
-  },
-  {
     "name": "alexanderjeamoro",
-    "link": "https://oroalej.github.io/alexanderjeamoro/#/",
-    "image": "https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-    "github": "https://github.com/oroalej/alexanderjeamoro",
+    "link": "https://oroalej.github.io/#/",
+    "github": "https://github.com/oroalej/oroalej.github.io",
+    "gallery": [
+      "images/portfolio/portfolio-homepage-light.jpg",
+      "images/portfolio/portfolio-homepage-dark.jpg",
+      "images/portfolio/portfolio-resume-light.jpg",
+      "images/portfolio/portfolio-resume-dark.jpg",
+      "images/portfolio/portfolio-gallery.jpg"
+    ],
     "technologies": [
       "ReactJS",
       "ReactRouter",
@@ -27,49 +21,68 @@
   {
     "name": "intothealgoverse",
     "link": "https://oroalej.github.io/intothealgoverse/#/",
-    "image": "https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     "github": "https://github.com/oroalej/intothealgoverse",
     "technologies": [
       "ReactJS",
       "ReactRouter",
       "TailwindCSS",
-      "FontAwesome",
-      "HeroIcons"
+      "FontAwesome"
+    ],
+    "gallery": [
+      "/images/intothealgoverse/intothealgoverse-homepage.jpg",
+      "/images/intothealgoverse/intothealgoverse-dapp.jpg",
+      "/images/intothealgoverse/intothealgoverse-about.jpg",
+      "/images/intothealgoverse/intothealgoverse-mobile.jpg",
+      "/images/intothealgoverse/intothealgoverse-menu.jpg"
     ]
   },
   {
     "name": "Suki Reward App",
-    "link": "",
-    "image": "https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     "technologies": [
       "Laravel",
       "VueJS",
       "TailwindCSS",
       "Inertia",
       "FontAwesome"
+    ],
+    "gallery": [
+      "/images/suki/suki-reward-add-partner.jpg",
+      "/images/suki/suki-reward-review-partner.jpg",
+      "/images/suki/suki-reward-review-campaigns.jpg"
     ]
   },
   {
     "name": "Thriving-in-between",
     "link": "https://thriving-in-between.com/",
-    "image": "https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     "technologies": [
       "Laravel",
       "VueJS",
       "Vuex",
+      "Vuetify",
       "VueRouter",
       "FontAwesome"
+    ],
+    "gallery": [
+      "/images/thriving-in-between/thriving-in-between-homepage.jpg",
+      "/images/thriving-in-between/thriving-in-between-blog.jpg",
+      "/images/thriving-in-between/thriving-in-between-backend-blog-list.jpg",
+      "/images/thriving-in-between/thriving-in-between-backend-create-blog.jpg",
+      "/images/thriving-in-between/thriving-in-between-backend-gallery.jpg",
+      "/images/thriving-in-between/thriving-in-between-backend-gallery-page.jpg",
+      "/images/thriving-in-between/thriving-in-between-backend-gallery-preview.jpg"
     ]
   },
   {
     "name": "old.alexanderjeamoro",
     "link": "https://oroalej.github.io/old.alexanderjeamoro/",
-    "image": "https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     "github": "https://github.com/oroalej/old.alexanderjeamoro",
     "technologies": [
       "HTML",
       "CSS",
       "FontAwesome"
+    ],
+    "gallery": [
+      "/images/old-portfolio/old-portfolio-homepage.jpg"
     ]
   }
 ]

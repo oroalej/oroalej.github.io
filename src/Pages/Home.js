@@ -2,8 +2,7 @@ import DefaultLayout from "../Layouts/DefaultLayout";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import {ArrowNarrowDownIcon, ChevronUpIcon, LinkIcon} from "@heroicons/react/solid";
-import Project from "../Components/Project";
+import {ArrowNarrowDownIcon} from "@heroicons/react/solid";
 import AnimationWrapper from "../Components/AnimationWrapper";
 import Projects from "../Data/Projects.json";
 import Skills from "../Data/Skills.json";
@@ -12,13 +11,22 @@ import tw from 'twin.macro'
 import {camelCase} from "lodash/string";
 import SectionWrapper from "../Components/SectionWrapper";
 import ContactMe from "../Components/ContactMe";
+import ScrollToTop from "../Components/ScrollToTop";
+import {useRef} from "react";
+import ProjectContainer from "../Components/ProjectContainer";
 
 const Home = () => {
+  const projectContainer = useRef();
+
+  const scrollToProject = () => {
+    window.scrollTo({top: projectContainer.current.offsetTop, behavior: 'smooth'})
+  }
+
   return (
     <DefaultLayout>
-      <div tw="max-h-screen flex flex-col">
-        <div tw="flex-1 py-28 lg:py-40 flex flex-row items-center justify-between">
-          <div tw="inline-flex flex-col">
+      <div tw="flex flex-col xl:min-h-subheader">
+        <div tw="flex-1 flex flex-row items-center justify-between py-28">
+          <div tw="inline-flex flex-col xl:-mt-20">
             <div
               tw="text-3xl lg:text-6xl font-extrabold leading-none font-mono text-gray-700 dark:text-gray-200 transition-colors duration-200">
               <span tw="block">Alexander Jeam</span>
@@ -56,25 +64,24 @@ const Home = () => {
 
         <div tw="inline-flex flex-col justify-center items-center mb-10">
           <p tw="mb-6 inline-flex flex-row flex-wrap">
-              <span
-                tw="font-medium text-3xl text-gray-600 font-sans dark:text-gray-200 transition-colors duration-200">Projects</span>
-            <LinkIcon
-              tw="w-4 h-4 ml-1 mt-1 text-gray-700 hover:text-blue-600 cursor-pointer transition-colors dark:text-gray-200 dark:hover:text-red-500"/>
+            <span
+              tw="font-medium text-3xl text-gray-600 font-sans dark:text-gray-200 transition-colors duration-200">Projects</span>
           </p>
 
-          <a href="#portfolio">
+          <button onClick={scrollToProject}>
             <ArrowNarrowDownIcon
               tw="w-10 h-12 text-gray-600 transform animate-bounce duration-1000 ease-out mx-auto cursor-pointer dark:text-gray-200 transition-colors duration-200"/>
-          </a>
+          </button>
         </div>
       </div>
 
-      <SectionWrapper  id="portfolio">
+      <SectionWrapper ref={projectContainer}>
         <div tw="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {Projects.map((project, index) => (
             <AnimationWrapper triggerOnce animation={`animate-slide-up-bounce`} key={camelCase(project.name)}
                               delay={index * 50}>
-              <Project project={project}/>
+
+              <ProjectContainer project={project}/>
             </AnimationWrapper>
           ))}
         </div>
@@ -82,8 +89,8 @@ const Home = () => {
 
       <SectionWrapper>
         <h2 tw="inline-flex">
-          <span tw="font-medium text-3xl text-gray-600 font-sans text-left dark:text-gray-200 transition-colors duration-200">Skills</span>
-          <LinkIcon tw="w-4 h-4 ml-1.5 mt-1 text-gray-700 hover:text-blue-600 dark:hover:text-red-500 dark:text-gray-200 cursor-pointer transition-colors"/>
+          <span
+            tw="font-medium text-3xl text-gray-600 font-sans text-left dark:text-gray-200 transition-colors duration-200">Skills</span>
         </h2>
 
         <div tw="mb-7 w-full text-gray-700 dark:text-gray-200 transition-colors duration-200">
@@ -106,11 +113,7 @@ const Home = () => {
         </div>
       </SectionWrapper>
 
-      <div
-        tw="fixed bottom-5 right-5 rounded-full w-12 h-12 bg-red-400 text-white inline-flex justify-center items-center cursor-pointer hover:bg-red-500 transition-colors">
-        <ChevronUpIcon tw="w-8 h-8"/>
-      </div>
-
+      <ScrollToTop/>
       <ContactMe/>
     </DefaultLayout>
   )

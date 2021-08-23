@@ -187,4 +187,24 @@
   }
 }
 
+.project-image__preview {
+  height: calc(100vh - 130px);
+}
+
+@media (min-width: 640px) {
+  .project-image__preview {
+    height: calc(100vh - 174px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-image__preview {
+    height: calc(100vh - 162px);
+  }
+}
+
 @tailwind utilities;
+
+.dark.dark\:bg-gray-800 {
+  @apply bg-gray-800;
+}

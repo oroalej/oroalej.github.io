@@ -15,11 +15,20 @@ module.exports = {
       height: {
         4.5: '1.125rem',
       },
+      minHeight: {
+        subheader: 'calc(100vh - 68px)'
+      },
+      maxHeight: {
+        '4/5': '80%'
+      },
       colors: {
         sky: colors.sky
       },
       transitionDuration: {
         '4000': '4000ms',
+      },
+      cursor: {
+        'zoom-in': 'zoom-in'
       }
     }
   },
@@ -27,7 +36,8 @@ module.exports = {
     extend: {
       width: ['hover'],
       margin: ['odd', 'even'],
-      textColor: ['active']
+      textColor: ['active'],
+      ringColor: ['hover']
     },
   },
   plugins: [],
