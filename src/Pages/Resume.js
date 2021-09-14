@@ -16,7 +16,8 @@ const Resume = () => {
     <DefaultLayout>
 
       <div css={tw`py-6 text-right`}>
-        <a href="../../Alexander%20Jeam%20Oro.pdf"
+        <a href="/files/Alexander%20Jeam%20Oro.pdf"
+           target="_blank"
            download="Alexander Jeam Oro - Web Developer.pdf"
            tw="inline-flex flex-row items-center gap-1 text-gray-200 pl-3.5 pr-4 py-2 bg-gray-700 hover:bg-gray-600 transition-colors rounded-md">
           <DownloadIcon tw="w-5 h-5"/>
